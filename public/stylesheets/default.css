@@ -1,0 +1,393 @@
+/* Template */
+body {
+	background: Gainsboro;
+}
+#container {
+	background: White;
+	margin: auto;
+	width: 1024px;
+	border: 2px solid DimGrey;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 100%;
+}
+#header {
+	margin: 0 120px 0 120px;
+	border-bottom: 3px solid DimGrey;
+	text-align: center;
+}
+#header h2 {
+	color: SlateGrey;
+}
+#header h2 a {
+	color: SlateGrey;
+	text-decoration: none;
+}
+#header h2 a:hover {
+	text-decoration: underline;
+}
+#flash-message {
+	background: DimGrey;
+	margin: 10px 120px 0 120px;
+	border: 1px solid Black;
+	text-align: center;
+}
+#flash-message p {
+	margin: 6px 0 6px 0;
+	color: White;
+}
+#error-messages {
+	background: Maroon;
+	margin: 10px 120px 0 120px;
+	padding-left: 20px;
+	border: 1px solid Black;
+	color: White;
+}
+#error-messages p {
+	text-decoration: underline;
+}
+#error-messages ol li {
+	font-size: 90%;
+}
+#main {
+	margin: 20px;
+	border: 1px solid Gainsboro;
+}
+#footer {
+	margin: 0 120px 0 120px;
+	border-top: 2px solid DimGrey;
+	text-align: center;
+}
+#footer p {
+	margin: 8px 0 8px 0;
+	color: SlateGrey;
+	font-size: 80%;
+}
+#footer p a {
+	color: SlateGrey;
+	text-decoration: none;
+}
+#footer p a:hover {
+	text-decoration: underline;
+}
+/* Shared IDs */
+#page-title {
+	border-bottom: 1px solid Gainsboro;
+	text-align: center;
+}
+#page-title p {
+	margin: 12px 0 12px 0;
+	color: DimGrey;
+	font-size: 110%;
+	font-weight: bold;
+}
+#search-bar {
+	display: inline-block;
+	margin: 10px 10px 2px 10px;
+}
+#search-bar form {
+	display: inline-block;
+}
+#search-bar form input {
+	width: 200px;
+}
+#button-new-entry {
+	display: inline-block;
+	margin: 10px 10px 2px 10px;
+	width: 578px;
+	text-align: right;
+}
+#no-entries {
+	margin-left: 20px;
+	padding-bottom: 370px;
+	font-size: 90%;
+}
+#index-table {
+	table-layout: fixed;
+	width: 100%;
+	word-wrap: break-word;
+}
+#index-table th {
+	padding: 4px 10px 4px 10px;
+	border: 1px solid Black;
+	color: White;
+	font-size: 80%;
+}
+#index-table td {
+	padding: 4px 10px 4px 10px;
+	font-size: 90%;
+}
+#actions-header {
+	background: SlateGrey;
+	width: 186px;
+}
+#action-header {
+	background: SlateGrey;
+	width: 60px;
+}
+#delete-dialog {
+	padding: 220px 0 220px 0;
+	text-align: center;
+}
+#delete-dialog p {
+	font-size: 90%;
+}
+#show-buttons {
+	margin: 10px 10px 10px 10px;
+}
+/* Shared classes */
+.form-default fieldset {
+	display: inline-block;
+	background: WhiteSmoke;
+	padding: 6px 14px 6px 14px;
+}
+.form-default fieldset legend {
+	font-size: 90%;
+}
+.form-default label {
+	font-size: 90%;
+}
+.form-default input, select, textarea {
+	margin: 8px 0 8px 0;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 90%;
+}
+.required-field {
+	color: Maroon;
+	font-weight: bold;
+}
+.button-default {
+	margin: 8px 0 8px 2px;
+}
+.scrollable-table {
+	margin: 10px;
+	height: 397px;
+	overflow-y: scroll;
+}
+.normal-header {
+	background: DimGrey;
+}
+.normal-data {
+	border-bottom: 1px solid DarkGrey;
+}
+h4.page-subtitle {
+	margin: 12px 0 12px 16px;
+	color: DimGrey;
+	text-decoration: underline;
+}
+.show-details-table {
+	margin: 6px 0 6px 20px;
+	border-collapse: collapse;
+	border: 2px solid DimGrey;
+}
+.show-details-table td {
+	padding: 5px 20px 5px 10px;
+	font-size: 90%;
+}
+.details-name {
+	background: DimGrey;
+	border-bottom: 1px solid White;
+	color: White;
+}
+.details-data {
+	width: 450px;
+	border-bottom: 1px solid DimGrey;
+}
+.details-data-alternative {
+	width: 140px;
+	border-bottom: 1px solid DimGrey;
+}
+.show-description {
+	margin: 20px;
+	padding: 4px 6px 4px 6px;
+	height: 185px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	border: 1px solid DimGrey;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 90%;
+	overflow-y: scroll;
+}
+.inline-table {
+	display: inline-block;
+}
+/* Login -> Index */
+#login-index {
+	margin: auto;
+	padding: 166px 0 165px 0;
+	width: 184px;
+}
+/* Index -> Index */
+#index-index {
+	margin: auto;
+	padding: 100px 0 99px 0;
+	width: 215px;
+}
+#menu-default {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+}
+#menu-default li {
+	margin: 10px 0 10px 0;
+	padding: 10px 30px 10px 30px;
+	border: 1px solid Black;
+}
+#menu-default li a {
+	color: White;
+	text-decoration: none;
+}
+#menu-default li a:hover {
+	text-decoration: underline;
+}
+li.default-entry {
+	background: DimGrey;
+}
+#logout-entry {
+	background: Maroon;
+}
+/* Patients -> Index */
+#patients-code-header {
+	width: 45px;
+}
+#patients-gender-header {
+	width: 39px;
+}
+#patients-birthdate-header {
+	width: 68px;
+}
+#patients-code-data,
+#patients-gender-data,
+#patients-birthdate-data {
+	text-align: center;
+}
+/* Patients -> New & Edit */
+#patients-form {
+	margin: 20px auto 10px auto;
+	width: 241px;
+}
+#patients-form form input {
+	width: 200px;
+}
+/* Patients -> Show */
+#index-table-in-patients-show {
+	margin: 16px 10px 20px 20px;
+	width: 570px;
+}
+#no-entries-in-patients-show {
+	margin-left: 20px;
+	font-size: 90%;
+}
+/* Medical records -> Index */
+#medical-records-document-uid-header {
+	width: 57px;
+}
+#medical-records-document-series-header {
+	width: 69px;
+}
+#medical-records-document-number-header {
+	width: 26px;
+}
+#medical-records-document-date-header {
+	width: 68px;
+}
+#medical-records-patient-code-header {
+	width: 45px;
+}
+#medical-records-is-printed-header {
+	width: 43px;
+}
+#medical-records-is-locked-header {
+	width: 60px;
+}
+#medical-records-document-uid-data,
+#medical-records-document-series-data,
+#medical-records-document-number-data,
+#medical-records-patient-code-data,
+#medical-records-is-printed-data,
+#medical-records-is-locked-data {
+	text-align: center;
+}
+#medical-records-patient-full-name-data a {
+	color: Black;
+}
+/* Medical records -> New & Edit */
+#medical-records-form {
+	margin: 20px auto 10px auto;
+	width: 441px;
+}
+#medical-records-form select {
+	width: 406px;
+}
+#medical-records-form textarea {
+	width: 400px;
+	height: 144px;
+	resize: vertical;
+}
+/* Medical records -> Print */
+#print-dialog {
+	padding: 211px 0 211px 0;
+	text-align: center;
+}
+#print-dialog p {
+	font-size: 90%;
+}
+/* Medical conditions -> Index */
+#medical-conditions-code-header {
+	width: 45px;
+}
+#medical-conditions-type-header {
+	width: 65px;
+}
+#medical-conditions-code-data {
+	text-align: center;
+}
+/* Medical conditions -> New & Edit */
+#medical-conditions-form {
+	margin: 20px auto 10px auto;
+	width: 441px;
+}
+#medical-conditions-form form input {
+	width: 400px;
+}
+#medical-conditions-form textarea {
+	width: 400px;
+	height: 140px;
+	resize: vertical;
+}
+/* Treatments -> Index */
+#treatments-code-header {
+	width: 45px;
+}
+#treatments-type-header {
+	width: 118px;
+}
+#treatments-code-data {
+	text-align: center;
+}
+/* Treatments -> New & Edit */
+#treatments-form {
+	margin: 20px auto 10px auto;
+	width: 441px;
+}
+#treatments-form form input {
+	width: 400px;
+}
+#treatments-form textarea {
+	width: 400px;
+	height: 140px;
+	resize: vertical;
+}
+/* About -> Index */
+#about-index {
+	padding: 182px 0 182px 0;
+	text-align: center;
+}
+#about-index h4 {
+	color: DimGrey;
+	text-decoration: underline;
+}
+#about-index p {
+	line-height: 14px;
+	font-size: 80%;
+}
